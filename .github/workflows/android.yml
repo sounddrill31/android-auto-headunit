@@ -29,5 +29,5 @@ jobs:
     with:
     file: "*.apk"
     tags: true
-     env:
-     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
