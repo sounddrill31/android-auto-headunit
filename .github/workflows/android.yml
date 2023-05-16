@@ -25,9 +25,9 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Upload to Release
-      uses: xresloader/upload-to-github-release@v1
-      env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        file: "*.apk"
-        tags: true
+    uses: xresloader/upload-to-github-release@v1
+    with:
+    file: "*.apk"
+    tags: true
+     env:
+     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
