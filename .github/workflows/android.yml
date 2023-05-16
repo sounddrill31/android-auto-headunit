@@ -25,8 +25,10 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Upload to Release
-    uses: xresloader/upload-to-github-release@v1
+      uses: softprops/action-gh-release@v1
       with:
-      file: "*.apk"
-    env:
+        files: "*.apk"
+        name: ${{ github.run_id }}
+        tag_name: ${{ github.run_id }}
+      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
