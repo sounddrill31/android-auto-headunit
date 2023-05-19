@@ -21,8 +21,8 @@ jobs:
         cache: gradle
     - name: Initialize repo
       run: |
-        git config --global user.name "sounddrilltest"
-        git config --global user.email "sounddrilltest@gmail.com"
+        git config --global user.name "sounddrill31"
+        git config --global user.email "sounddrill31@gmail.com"
       id: pwd
 
     - name: Grant execute permission for gradlew
